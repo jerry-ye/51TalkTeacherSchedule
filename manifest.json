@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "51Talk 约课神器 全部开课时间表",
+    "description": "这是一个专门给51talk使用的插件,提供附加功能可以让你知道该老师具体的开课时间表。 另外如果你需要注册的话，请使用这个链接：http://www.51talk.com/user/user_register.php?pid=1583078 有次卡赠送",
+    "version": "1.2",
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://www.51talk.com/teacher/info/*", "http://51talk.com/teacher/info/*"],
+            "js": ["jquery-2.1.4.min.js", "contentscript.js"]
+        }
+    ],
+    "options_page": "options.html"
+}
